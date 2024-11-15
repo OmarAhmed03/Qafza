@@ -17,15 +17,18 @@ This repository contains a FastAPI-based web application for predicting diamond 
     git clone <repository-url>
     cd <repository-directory>
     ```
-
 2. Build the Docker image:
     ```sh
     docker build -t diamond-price-predictor .
     ```
-
 3. Run the Docker container:
     ```sh
     docker run -p 8000:8000 diamond-price-predictor
+    ```
+4. Alternatively, you can pull the pre-built Docker image:
+    ```sh
+    docker pull omarahmed03/diamond-predictor:tagname
+    docker run -p 8000:8000 omarahmed03/diamond-predictor:tagname
     ```
 
 ## Usage
